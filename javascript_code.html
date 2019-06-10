@@ -1,0 +1,39 @@
+<!--Random Javascript codes-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <script>
+    function sayHello(who) {
+        document.write("Hello, " + who + "<br>");
+    }
+    </script>
+</head>
+<body>
+    <script>
+        var n1 = 5;
+        var n2 = 8;
+        var s1 = n1++;//pre-increment s1 = 5, n1= 6
+        var s2 = ++n1;//post-increment s2 = 7, n1 = 7
+        var s3 = s1 + n2;// 13
+        var s4 = s2 + n2;// 15
+        var alpha = "Javascript";
+        var length = alpha.length;
+        var result = alpha.substring(3,5);//from 3rd till 5th.Do not include 5th position.
+        var arr = ["cat","dog",9,true,false];//var arr = new Array("cat","dog",9,true,false);
+        document.write(s1,"<br>",s2,"<br>",s3,"<br>",s4,"<br>",result,"<br>",length,"<br>",arr[3],"<br>"); //space is "\n", new line "<br>."
+        sayHello("Bob");
+        //document.write("<br>");
+        sayHello("Mary");
+        var name = prompt("Enter your name");
+        alert("Hello "+ name+ "<br>"); //alert and prompt works only in script tag.
+        //output is 5 7 13 15 as 10 true Hello, Bob Hello, Mary
+        for(i=0;i<5;i++){
+            document.write("This is iteration "+i+"<br>");
+        }
+    </script>
+</body>
+</html>
