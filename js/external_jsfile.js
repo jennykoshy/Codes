@@ -1,0 +1,1 @@
+alert("This pop up is from an external javascript file which is in the js folder. This is called through src attribute in script tag in html file.");
