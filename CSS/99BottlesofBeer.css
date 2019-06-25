@@ -1,0 +1,214 @@
+/* external CSS file for 99BottlesOfBeer */
+#container{
+    background-color: transparent;
+    text-align: center;
+}
+#main{    
+    background-color: white; 
+    margin-left: 400px;
+    margin-right: 400px;
+    text-align: center;
+    /* border-style: solid;
+    border-width: 2.5px; */
+    /* background-image: url(bottleimage.jpg); */
+    /* background: url('bottleimage.jpg');
+    height: 150px; */
+}
+body{
+    background-color: transparent;
+    text-align: center;
+    color: Black;
+    font-family: "Times New Roman", Verdana, Arial;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, div, p ,ul {
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+#header {
+    background-color: white; 
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    /* background-image: url("bottleimage.jpg");
+    background-size: contain; */
+    /* height: 150px; */
+    /* height: 20px;  */
+
+    /* background-image: url(Images/bottleimage.jpg); */
+}
+/* #header img{
+    width: 100px;
+    height: 100px;
+
+    
+} */
+#header h1 {
+    color: green;
+    font-family: Georgia, Verdana, Arial;
+    font-size: 3.2em;
+    font-weight: normal;
+    padding: 0px 5px 5px 5px;
+    margin: 0;
+    /* float: right; */
+    /* display: inline-block; */
+}
+
+#header p {
+    color: green;
+    font-family: Georgia, Verdana, Arial;
+    font-size: 1.5em;
+    font-weight: normal;
+    padding: 0px 5px 5px 5px;
+    margin: 0;
+    clear: both;
+}
+
+
+
+/* 
+#navigation {
+        /* display: none; 
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin: 0;
+        padding: 0;
+    }  */
+
+    /*line -height: space above and below inline elements*/
+/* #navigation ul{
+    /*font-family:Tahoma,"Trebuchet MS", sans-serif;*/
+    /*font-size: 0.8em;
+    line-height:11px;
+    color:#000;
+}
+
+#menu{
+    margin:0;
+    padding:6px 0 5px 0;
+    background-color: #183752;
+    list-style-type:none;
+    border-bottom:2px solid #000;
+    list-style-type: none; 
+
+}
+#menu li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border-left:1px solid #ccc;
+}
+#submenu{
+    margin:0;
+    padding:5px 0;
+    background-color: yellowgreen;
+    text-transform: uppercase;
+    /*background-color:#24568E;*/
+    /*list-style-type:none;
+}
+#submenu li{
+    display: inline;
+    color: black;
+    margin: 0;
+    padding: 0;
+    border-left:1px solid #ccc;
+} */
+h2{
+    color: red;
+    font-size: 2.5em;
+}
+h3{
+    color: green;
+    font-size: 1.6em;
+}
+#header h1 span{
+    color: red;
+}
+p span{
+    color: red; 
+}
+
+/*div#navigation ul#submenu a:hover {
+    text-decoration:underline;
+} */
+
+
+
+#navigation{
+    background-color: green;
+    color: Black;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+#menu {
+    font-size: 150%;
+    font-weight: bold;
+    padding:5px;
+    margin:0;
+    text-align: center;
+}
+#menu li{
+    color: white;
+    display: inline;
+    line-height: 11px;
+    padding: 15px;
+}
+#menu li a{
+    color: white;
+    text-decoration: none;
+}
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+#submenu {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 5px;
+    margin:0;
+    text-align: center;
+}
+#submenu li{
+    color: white;
+    display: inline;
+    line-height: 11px;
+    padding: 20px; 
+    /* padding is for space between the anchor tags(submenus).*/
+}
+#submenu li a{
+    color: white;
+    text-decoration: none;
+}
+#submenu li a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+}
+b{
+    color: red;
+}
+/* #footer p {
+    font-size: 150%;
+    font-weight: bold;
+    padding:5px;
+    margin:0;
+    text-align: center;
+}
+
+#footer p a {
+    color: White;
+    text-decoration: none;
+}
+
+#footer p a:hover {
+    text-decoration: underline;
+}
+ */

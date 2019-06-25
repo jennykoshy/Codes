@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <!-- <script src = "index.js"></script> -->
+    <!-- external javascript should be added only after html element. Otherwise error Cannot set property inner HTML of null.-->
+    <!-- CSS external link should be in the head section. Don't use forward slash/ while closing the link tag -->
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        button:active{
+            color: red;
+        }
+    </style>
+</head>
+<!-- inline javascript -->
+<!-- <body onload = "alert('Hello');"> -->
+    <!-- <h1 id = "demo">Hello</h1>
+    <script>console.log(5 + 6);</script> -->
+    <!-- To see the output in console. -->
+    <!-- inline javascript -->
+    <!-- <button type = "button" onclick = "document.getElementById('demo').innerHTML = 'Hurray!'">Try It</button> -->
+    <!-- <button type = "button" onclick = "document.write(5 + 6)">Try It</button> -->
+    <!-- The above code will replace the HTML element even thought it is not related to the h1.Because if using document.write() method after the html document is loaded, it will delete all the existing elements.-->
+    <!-- document.write() should be used only for testing purposes. If used in an HTML element as inline javascript, then it iwll delete all the previous HTMLm elements. Safer to use in external js or internal js. -->
+    <!-- external javascript should be added only after html element. Otherwise error Cannot set property inner HTML of null. Webpage faster. -->
+    <!-- <script src = "index.js"></script>  -->
+    <!-- internal javascript -->
+    <!-- <script>
+        alert("Hello");
+    </script> -->
+    <!-- dont put css link in the bottom. It will be executed only in the end. -->
+    <!-- <link rel="stylesheet" type="text/CSS" href="styles.css" /> -->
+    <!-- <link rel = "stylesheet" href = "styles.css"> -->
+    <!-- Place javascript after the html element and css before the html element.-->
+
+    <!-- DOM example -->
+    <h1>Hello</h1>
+    <input type = "checkbox">
+    <button >Click Me</button>
+    <ul>
+        <li class = list>
+            <a href = "https://www.google.com">Google
+            </a>
+        </li>
+        <li class = list>Second</li>
+        <li class = list>Third</li>
+    </ul>
+    <script src = "index.js"></script>
+    
+</body>
+</html>

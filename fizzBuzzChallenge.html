@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FizzBuzzChallenge</title>
+    <style>
+        
+    h1{
+        font-size: 150%; 
+        font-family: Arial, Helvetica, sans-serif;
+        color: red;
+        font-weight: bold;
+        text-align: center;
+    }
+    p{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        color: blue;
+        font-size: 100%
+    }
+    </style>
+</head>
+<body>
+    <h1>Demonstration of FizzBuzzChallenge</h1>
+    <p>Print numbers from 1 to 100, but print "Fizz" for multiples of 3, "Buzz" for multiples of 5 and print "FizzBuzz" for multiples of 3 and 5.</p>
+
+    <script>
+        var arrayName = [];//initializing an array.
+        function fizzBuzz(){
+            /*using while loop
+            var i = 1;//initailizing for while loop.
+            while( i <= 100) {*/
+            for(i = 1; i <= 100; i++) {//using for loop.
+                if(i % 15 === 0) { //if(i % 3 === 0 && i % 5 === 0) 
+            arrayName.push("FizzBuzz", "\n");
+            //document.write("FizzBuzz", "\n");
+                }
+                else if(i % 3 === 0){
+                arrayName.push("Fizz", "\n");
+                //document.write("Fizz", "\n");
+                }
+                else if(i % 5  === 0){
+                arrayName.push("Buzz", "\n");
+                //document.write("Buzz", "\n");
+                }
+                else{
+               arrayName.push(i, "\n");
+                //document.write(i, "\n"); //"\n" for space and "<br>" for new line."
+                }
+                //i++; while loop increment, not needed in for loop. To test while, comment this line. it will crash.
+        }
+    document.write(arrayName);
+}
+fizzBuzz();
+
+
+    </script>
+
+</body>
+</html>

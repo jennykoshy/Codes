@@ -1,4 +1,4 @@
-<!--Random Javascript codes-->
+<!--Random Javascript codes for practice-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +12,9 @@
     }
     </script>
 </head>
-<body>
+<body onload="alert('Hello!');"> 
+    <!-- Above line is inline javascript -->
+    
     <script>//internal javascript
         var n1 = 5;
         var n2 = 8;
@@ -29,7 +31,7 @@
         //document.write("<br>");
         sayHello("Mary");
         var name = prompt("Enter your name");
-        alert("Hello "+ name+ "<br>"); //alert and prompt works only in script tag.
+        alert("Hello "+ name); //alert and prompt works only in script tag.
         //output is 5 7 13 15 as 10 true Hello, Bob Hello, Mary
         for(i=0;i<5;i++){
             document.write("This is iteration "+i+"<br>");
