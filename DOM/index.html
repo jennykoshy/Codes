@@ -1,3 +1,33 @@
+<!-- Javascript can be used to manipulate the object and this is doen through DOM.Using the .notation we can manipulate the DOM objects.-->
+
+<!-- car.color; This will get us the color of the car. Get property -->
+
+<!-- console codes for DOM 
+var heading = document.firstElementChild.lastElementChild.firstElementChild;
+ //manipulating the <h1> tag to change the inner HTML of the web page. This is how dynamic interaction in a webpage takes place.
+heading.innerHTML = "Good Bye";
+//changing the color to red without changing the code in VSC.
+heading.style.color = "red";
+document.querySelector("input").click();
+//this selector looks inside the whole code for the input tag and puts a method click() on it. It simulates a mouse click on the input check box. Here the input type is checkbox.
+//----Angela's challenge chapter 119--change the third list name to Jenny instead of third in the console without changing the HTML code.---------------------------//
+document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML = "Jenny"; OR
+document.querySelector("ul").lastElementChild.innerHTML = "Jenny";
+document.body.style.backgroundColor = 'orange';
+//the above code changes the background color of the web page. Javascript changed how the content rendered locally in your browser by manipulating the document object. Hyphanated CSS property will be written in Camel Case in JS.
+ Elements tab in Developer Tools and click on any line. You’ll see the value of == $0 display alongside. Now if you go to the Console tab and type $0 the value of the node you selected will display.  output is 1, which is the value of Element tag.
+ $0.nodeType; //To check the node type.
+ The numerical value of the node type, corresponding to the selected node will be displayed. e.g. If you had selected h1, you’d see 1. Doing the same for the text would yield 3, and the comment 8.
+ And when you know where the node sits in the DOM, you don’t need to manually select it, you can access it directly, for example:
+ document.body.nodeType;      // 1
+ You can also use nodeValue to get the value of a text or comment node, and nodeName to get the tag name of an element.
+ document.nodeType; // 9
+ document.nodeName; //1
+ document.nodeValue; //null
+ document.body.nodeType; //1
+ document.body.nodeName; //body
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,16 +67,17 @@
     <!-- Place javascript after the html element and css before the html element.-->
 
     <!-- DOM example -->
-    <h1>Hello</h1>
+    <h1 id ="title">Hello</h1>
     <input type = "checkbox">
-    <button >Click Me</button>
-    <ul>
-        <li class = list>
+    <!-- This checkbox is checked automatically through querySelector("input") through the console tab. --dynamic web interaction.-->
+    <button class = "btn">Click Me</button>
+    <ul id = "list">
+        <li class = item>
             <a href = "https://www.google.com">Google
             </a>
         </li>
-        <li class = list>Second</li>
-        <li class = list>Third</li>
+        <li class = item>Second</li>
+        <li class = item>Third</li>
     </ul>
     <script src = "index.js"></script>
     
