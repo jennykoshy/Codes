@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProtoType Examples</title>
+    <script type="text/javascript"></script>
+    <script>
+      function showResult() {
+        var str = $("grandfather").getStyle("margin-left");
+        alert("Element left margin is : " + str);
+      }
+    </script>
+    <style>
+      #grandfather {
+        font-size: 12px;
+        margin-left: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Click the button to see the result.</p>
+
+    <div id="grandfather">
+      This is grand father
+      <div id="father">
+        This is father.
+        <div id="kid">This is kid</div>
+      </div>
+    </div>
+    <br />
+
+    <input type="button" value="showResult" onclick="showResult()" ; />
+    <!--  input refers to something that requires user's input. eg: button, checkbox, radio button, textbox etc. It does not have an end tag. -->
+  </body>
+</html>
